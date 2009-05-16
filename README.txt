@@ -4,7 +4,7 @@
 
 == DESCRIPTION:
 
-A simple command line tool to start and join a multicast for your current subnet.
+A simple command line tool to start and/or join a multicast for your current subnet.
 
 == FEATURES/PROBLEMS:
 
@@ -12,11 +12,14 @@ A simple command line tool to start and join a multicast for your current subnet
 
 == SYNOPSIS:
 
-  $ bin/multicast serve This is a test message
-  "You said: 'This is a test message.'"
-  
-  $ bin/multicast receive
-  "Server said: 'This is a test message.'"
+  # computer 1
+  $ bin/multicast
+  This is a test message
+  You said: 'This is a test message.'
+
+  # computer 2
+  $ bin/multicast
+  Received: 'This is a test message.'
 
 == REQUIREMENTS:
 
@@ -24,7 +27,7 @@ A simple command line tool to start and join a multicast for your current subnet
 
 == INSTALL:
 
-* Download and use. No gem yet.
+* Download and use.
 
 == LICENSE:
 
